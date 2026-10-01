@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in Admiral does not work the way it should.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Remove API keys, tokens and
+        anything else secret from what you paste. For a security vulnerability,
+        email security@admiral.io instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Web console
+        - CLI
+        - Kubernetes agent
+        - Terraform provider
+        - API or SDK (Go, TypeScript, OpenAPI)
+        - Helm charts
+        - Documentation or website
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, and what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: The smallest set of steps, commands or configuration that shows the problem.
+      placeholder: |
+        1. admiral app create demo
+        2. admiral env create demo/dev
+        3. ...
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: For example `admiral version`, the agent chart version, or the provider version.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error output
+      description: Pasted as text. It is formatted as code automatically.
+      render: shell

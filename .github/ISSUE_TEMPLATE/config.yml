@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/admiral-io/admiral-community/discussions
+    about: Questions, ideas that are not yet a request, and how you use Admiral.
+  - name: Report a security vulnerability
+    url: https://github.com/admiral-io/.github/blob/master/SECURITY.md
+    about: Email security@admiral.io. Please do not open a public issue.
+  - name: Read the documentation
+    url: https://admiral.io/docs?utm_source=github&utm_medium=referral&utm_campaign=admiral-community
+    about: Guides, concepts and reference for Admiral.

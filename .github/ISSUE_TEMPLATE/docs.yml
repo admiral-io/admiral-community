@@ -1,0 +1,20 @@
+name: Documentation problem
+description: Something in the docs is wrong, missing or hard to follow.
+labels: ["documentation", "triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The URL of the page, if there is one.
+      placeholder: https://admiral.io/docs/...
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should it say?
